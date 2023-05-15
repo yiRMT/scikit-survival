@@ -134,7 +134,7 @@ def encode_categorical(table, columns=None, **kwargs):
 
     if columns is None:
         # for columns containing categories
-        columns_to_encode = {nam for nam, s in table.iteritems() if _is_categorical_or_object(s)}
+        columns_to_encode = {nam for nam, s in table.items() if _is_categorical_or_object(s)}
     else:
         columns_to_encode = set(columns)
 
